@@ -58,6 +58,8 @@ $classes = apply_filters( 'wp-rest-api-log-entry-display-classes', array( 'wrap'
 
 $download_urls = WP_REST_API_Log_Controller::get_download_urls( $entry );
 
+$response_body_class = apply_filters( 'wp-rest-api-log-entry-response-body-class', 'json', $entry );
+
 ?>
 <div class="<?php echo implode( ' ', array_map( 'esc_attr',  $classes ) ); ?>" id="wp-rest-api-log-entry">
 
@@ -201,7 +203,7 @@ $download_urls = WP_REST_API_Log_Controller::get_download_urls( $entry );
 						'entry' => $entry,
 					)
 				); ?>
-				<pre><code><?php echo esc_html( $entry->response->body ); ?></code></pre>
+				<pre><code class="<?php echo esc_attr( $response_body_class ); ?>"><?php echo esc_html( $entry->response->body ); ?></code></pre>
 			</div>
 		</div>
 

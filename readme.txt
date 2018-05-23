@@ -4,7 +4,7 @@ Tags: wp rest api, rest api, wp api, api, json, json api, log, logging, elasticp
 Donate link: https://github.com/petenelson/wp-rest-api-log
 Requires at least: 4.4
 Tested up to: 4.9
-Stable tag: 1.6.5
+Stable tag: 1.6.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -38,6 +38,10 @@ Roadmap
 
 
 == Changelog ==
+
+= v1.6.6 May 23, 2018 =
+* Added 'wp-rest-api-log-entry-response-body-class' filter to allow setting the class name for Highlight JS on the response body code tag.
+* Updated clipboard.js versions
 
 = v1.6.5 July 26, 2017 =
 * Fixed some escaping issues in admin and new-line characters when saving to database (props davidanderson)
