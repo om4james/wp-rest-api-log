@@ -1,7 +1,8 @@
 {
     "name": "petenelson/wp-rest-api-log",
     "description": "Logs requests and responses for the WP REST API",
-    "license": "GPL2+",
+    "type": "wordpress-plugin",
+     "license": "GPL2+",
     "authors": [
         {
             "name": "Pete Nelson",
